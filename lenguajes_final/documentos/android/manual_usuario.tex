@@ -1,0 +1,211 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{color}
+\usepackage{array}
+\usepackage[Spanish]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+
+\addtolength{\textwidth}{2cm}
+\addtolength{\hoffset}{-1cm}
+
+
+
+
+\title{``Building Id''}
+\author{Tania S\'{a}nchez\\  Isaac Torres  \\Luiggy Allauca}
+
+\begin{document}
+
+\setlength{\topmargin}{0.5in}
+			\pagestyle{empty}
+			\begin{center}
+				\textbf{
+					\vspace{-0.7em}
+					ESCUELA SUPERIOR POLIT\'{E}CNICA DEL LITORAL
+				}
+				\line(1,0){380}\\		
+				\scriptsize{FACULTAD DE INGENIER\'{I}A EN ELECTRICIDAD Y COMPUTACI\'{O}N}
+				
+				\vspace{2.5em}
+				\includegraphics[scale=0.3]{image/espol.jpg} 
+			\end{center}
+			
+			\begin{center}
+				\vspace{2.5em}
+				Lenguajes de Programaci\'{o}n
+				\\II T\'{e}rmino - 2012
+				\vspace{1.5em}  %espacio entre linea anterior y la siguiente
+				\\Manual de Usuario \\
+				\vspace{5em}
+				\Huge{\textbf{``Building Id''	\vspace{3em}}}
+			\end{center}	
+			
+			
+
+
+				\hspace*{5cm}Desarrolladores:
+				\vspace{1.5em}
+				\\\hspace*{8cm}Tania S\'{a}nchez
+				\\\hspace*{8cm}Isaac Torres
+				\\\hspace*{8cm}Luiggy Allauca
+
+
+\newpage 
+
+\setlength{\topmargin}{-0,2in}
+\tableofcontents
+
+\newpage 
+
+
+\section{Introducci\'{o}n}
+En la actualidad se habla mucho de los c\'{o}digos QR, estos c\'{o}digos son un sistema abierto de almacenamiento de informaci\'{o}n en formato bidimensional. Los tres cuadrados que est\'{a}n en sus esquinas permiten regular su posici\'{o}n, de esta manera el software que los interpreta puede encontrar la informaci\'{o}n a decodificar. La informaci\'{o}n est\'{a} transformada en puntos (pixeles) reconocibles por la c\'{a}mara que se usa para chequearlos.
+\newline
+\newline
+El presente manual ha sido creado para facilitar el uso de la aplicaci\'{o}n Building Id, elaborado en el sistema operativo Android, la misma que fue propuesta como primer proyecto de la materia de Lenguajes de Programaci\'{o}n en el a\H{n}o 2012 t\'{e}rmino II.
+\newline
+\newline
+\section{Requisitos}
+Un dispositivo Android con versi\'{o}n mayor o igual a la 2.3 que vaya a ejecutar una aplicaci\'{o}n m\'{o}vil. 
+\newline
+Un tel\'{e}fono m\'{o}vil con c\'{a}mara que albergue el sistema operativo Android.
+\newline
+\newline
+\section{La aplicaci\'{o}n}
+
+\subsection{Nombre y Descripci\'{o}n del Proyecto}
+\textbf{\textit{ ``Building Id''}}
+Es una aplicaci\'{o}n para dispositivos Android. Esta aplicaci\'{o}n nos permite saber la infomaci\'{o}n de un lugar determinado. Lugares tales como Facultades, Comedores, etc, esto es posible mediante la lectura de c\'{o}digos QR que estar\'{a}n de manera visible y de f\'{a}cil acceso en estos edificios. 
+\newline
+\newline
+Una vez realizada la lectura del c\'{o}digo QR se muestra la informaci\'{o}n del edificio correspondiente, automaticamente se guarda en el tel\'{e}fono para posteriormente ser consultada sin la necesidad del c\'{o}digo nuevamente, permitiendo as\'{i} realizar una \newline busqueda en la base y ver esta informaci\'{o}n de los diferentes lugares.
+\newline
+\newline
+\subsection{Caracter\'{i}sticas}
+\begin{itemize}
+\item 
+Uso de la c\'{a}mara del dispositivo
+\item
+Almacenamiento en base de datos
+\item
+Clasificaci\'{o}n por categor\'{i}as. (Todos, Edificio y Comedor)
+\end{itemize}
+
+
+\newpage
+
+\subsection{Funcionalidades}
+
+\textbf{\textit{``Building Id''}} cuenta con un men\'{u} inicio donde tenemos las opciones de: 
+\newline\newline
+\hspace*{3cm}Leer c\'{o}digo QR,
+\newline 
+\hspace*{3cm}Ver edificios,
+\newline 
+\hspace*{3cm}Buscar y 
+\newline
+\hspace*{3cm}Salir.
+\begin{center}
+	\includegraphics[scale=0.37]{image/menu.png}
+\end{center}
+	
+\subsubsection{Leer c\'{o}digo QR}
+
+La opci\'{o}n \textbf{``Leer c\'{o}digo QR''} permitir\'{a} la lectura del c\'{o}digo QR por medio de la c\'{a}mara.
+\begin{center}
+		\includegraphics[scale=0.2]{image/codigo_qr.jpg}
+	\end{center}
+
+Una vez leido el c\'{o}digo nos muestra una galer\'{i}a de imagenes y su respectiva informaci\'{o}n.
+		\\
+		\begin{center}
+				\includegraphics[scale=0.43]{image/galeriafict.png}
+		\end{center}
+
+\newpage
+\hspace*{2cm}\textbf{Informaci\'{o}n General y Estructura Interna} 
+		\newline		
+		\hspace*{4cm}\textit{``en este caso de FICT''}
+		\newline
+		
+		
+		\begin{figure}[h] % indico que voy a poner una figura y [h] indica que la posición relativa, tambien puedo usar t = top entre otros.
+		\hfill
+			\begin{minipage}[t]{.45\textwidth}
+				\begin{center}
+					\includegraphics[scale=0.41]{image/informacionfict.PNG} 
+				\end{center}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{.45\textwidth}
+				\begin{center}
+					\includegraphics[scale=0.3]{image/estructuraFict.png} 
+				\end{center}
+			\end{minipage}
+		\hfill
+		\end{figure}
+	
+	
+	
+	\subsubsection{Ver Edificios}
+	
+		La opci\'{o}n de \textbf{``Ver Edificios''} nos muestra la infomaci\'{o}n de los lugares que est\'{a}n almacenados en la base.
+		\newline
+		\newline
+		Categorizada en Edificio o Facultades y Comedores con la utilizaci\'{o}n de tags para una mejor apariencia.
+		
+		\begin{center}
+			\includegraphics[scale=0.5]{image/veredificios.png}
+		\end{center}
+	
+	
+		
+\newpage
+
+\subsubsection{Buscar}
+
+			 La opci\'{o}n \textbf{``Buscar''} permitir\'{a} una busqueda de los lugares que est\'{a}n almacenados en la base.
+			
+			Al momento de escribir la primera letra empieza a mostrar una lista de las facultades o comedores que se encuentran en la base de datos del tel\'{e}fono.
+			\newline
+		
+		
+		
+		\begin{figure}[h] % indico que voy a poner una figura y [h] indica que la posición relativa, tambien puedo usar t = top entre otros.
+		\hfill
+			\begin{minipage}[t]{.45\textwidth}
+				\begin{center}
+					\includegraphics[scale=0.33]{image/busqueda.PNG} 
+				\end{center}
+			\end{minipage}
+			\hfill
+			\begin{minipage}[t]{.45\textwidth}
+				\begin{center}
+					\includegraphics[scale=0.3]{image/autocompletarfict.png} 
+				\end{center}
+			\end{minipage}
+		\hfill
+		\end{figure}
+
+
+
+\subsubsection{Salir}
+
+		La opci\'{o}n \textbf{``Salir''} est\'{a} en caso de que se haya entrado por error o simplemente ya no se quiera usar la aplicaci\'{o}n. base.
+		\newline
+
+
+
+\newpage
+
+\addcontentsline{toc}{section}{Referencias}
+\begin{thebibliography}{99}
+\bibitem{unistan}http://androideity.com.
+\bibitem{acp} http://www.javaya.com.ar/androidya.
+\end{thebibliography}
+
+
+\end{document}

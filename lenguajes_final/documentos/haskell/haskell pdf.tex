@@ -1,0 +1,72 @@
+\documentstyle[11pt]{report}
+%\setcounter{page}{6}
+
+\oddsidemargin 0pt \evensidemargin 0pt
+\topmargin=1.25in
+\headheight 10pt \headsep 10pt \footheight 10pt \footskip 24pt
+\textheight 10in \textwidth 6.5in \columnsep 10pt \columnseprule 0pt
+
+\font\namefont=cmr10 scaled\magstep2
+\voffset=-.75in
+\parskip=.075in
+\parindent=0in
+
+\thispagestyle{empty}
+\begin{document}
+\bigskip
+
+
+
+\bigskip
+\large \centerline {\namefont \bf DOCUMENTO DE ESPECIFICACIONES, OBSERVACIONES, CONCLUSIONES} 
+\large \centerline {\namefont \bf Y EXPERIENCIAS DEL DESARROLLO EN HASKEL}
+\bigskip
+
+\centerline{\namefont  \small Luiggy Allauca}
+\bigskip
+
+\vspace{.1 in}
+\hrule
+\makebox[3.5in][l]
+
+
+{\leftskip=.6in  \parindent=-.3in  \parskip=.05in
+
+\bigskip
+
+\centerline {\namefont \LARGE \bf MASTERMIND}
+\bigskip
+\bigskip
+\bigskip
+
+{\bf DESCRIPCI\'ON DEL PROYECTO}
+\bigskip
+\\El MasterMind es un juego en el cual el usuario adivina una secuencia de colores mediante distintas combinaciones de colores que esconde tu rival, en este caso el rival sera la computadora; al final de cada turno el rival te dir\'a cu\'antos colores has acertado y si est\'an bien colocados o no.\\
+\\Para saber como adivinar si se a acertado o no los colores seran blanco y negro, el negro indica que se acerto a un color pero no a su posici\'on en cambio que las blancas indican que se acertado a la posici\'on y al color; el juego termina cuando se tenga todos los colores adivinados en la posici\'on acertada de cada color en este caso cuando aparezcan los 4 colores blancos.\\
+\bigskip
+\bigskip
+
+{\bf A QUIEN VA DIRIGIDA LA APLICACI\'ON}
+\bigskip
+\\Este juego va dirigido para todo tipo de usuario que le guste los juegos de adivinazan, esta destinado para usuarios que tengan habilidades en poder adivinar una secuencia de aleatorios. El juego toma mucho en cuenta la habilidad mental del usuario ya que se ha implementado un algoritmo gen\'etico que hace que seleccione una mejor opci\'on de la elecci\'on de los colores. 
+\bigskip
+\bigskip
+\newpage
+{\bf OBSERVACIONES}
+\bigskip
+\\Desarrollar en Haskel fue complicado, habia que refrescar todos los conocimientos de recursividad para poder implementar las funciones esto se debe a que haskell es un lenguaje puramente funcional; se obtuvo complicaciones en la elaboraci\'on de las funciones para poder hacer la aleatoriedad y el de poner un elemento dentro de un arreglo, para esto se tuvo que investigar y analizar muchos ejemplos para poder implentar lo que se queria hacer para nuestro proyecto. 
+\bigskip
+\bigskip
+
+
+{\bf CONCLUSIONES}
+\bigskip
+\\En este proyecto se aprendi\'o a resolver algoritmos gen\'eticos, los cuales permiten la mejor eleci\'on de una poblaci\'on objetivo; en nuestro proyecto se la implemento para tener una mejor eleci\'on dela poblaci\'on que esta por acertar al color aleatorio.\\
+\bigskip
+\bigskip
+
+{\bf EXPERIENCIAS}
+\bigskip
+\\El aprender un lenguaje puramente funcional a perimitido que se retrase en la implementaci\'on eﬁciente del proyecto. Las m\'ultiples funciones que tiene en el lenguaje a permitido una mejor implementaci\'on; en este lenguaje fue raro no encontrar las sentencias FOR y WHILE, investigando un poco sobre la programaci\'on funcional se encontr\\o de que este tipo de lenguajes es casi implosible encontrar este tipo de sentencias porque se aplica la recursividad en todo el lenguaje.
+
+\end{document}
